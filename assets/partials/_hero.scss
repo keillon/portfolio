@@ -1,0 +1,247 @@
+// Hero left
+.content-hero{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-block: 5rem;
+}
+
+.left-hero{
+    flex: 1;
+
+    
+}
+.right-hero{
+    flex: 1;
+}
+
+
+.h1__hero{
+    max-width: 55ch;
+    font-size: 1.5rem;
+    margin-block: 1rem;
+}
+
+.name__hero{
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.line-h{
+    line-height: calc(1em + 0.5rem);
+    font-weight: 200;
+}
+
+
+.here-me{
+    background: transparent;
+    background-color: var(--color-bg);
+    padding: 0.55rem;
+    font-size: 1.2rem;
+    margin-block: 1rem;
+    position: relative;
+    border-radius: .25rem;
+    color: var(--txt-color);
+
+}
+
+.here-me::after{
+    content: '';
+    width: 100%;
+    background: var(--txt-color-2);
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: .25rem;
+    transition: transform .5s ease-in-out;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+.here-me:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: .5s ease-in-out;
+}
+
+// scrollReveal
+
+.h1__hero{
+    visibility: hidden;
+}
+
+// scrollReveal final
+
+
+// Hero left FINAL
+
+
+
+
+// Hero right 
+
+
+.skills-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.html__icon{
+    color: #e54d26;
+}
+
+.css__icon{
+    color: #0070ba;
+}
+
+.js__icon{
+    color: #fc9e31;
+}
+
+
+.h3__hero{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.skills__icons{
+    margin-inline: 1rem;
+    position: relative;
+    width: 15rem;
+}
+
+.fz-5{
+    font-size: 3.5rem;
+}
+
+.text__skills{
+    position: absolute;
+    transform: translateY(50%);
+    left: 4rem;
+    font-size: 1.25rem;
+}
+
+.skills{
+    width: 11.75rem;
+    border-radius: 20px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-block: .25rem;
+    
+}
+
+
+.skills .barras{
+    background-color: var(--txt-color);
+    display: block;
+    height: 20px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+
+.barras > .html{
+    height: 20px;
+    background: #e54d26;
+    position: absolute;
+}
+.barras > .css{
+    height: 20px;
+    background: #0070ba;
+    position: absolute;
+}
+
+
+.barras > .js{
+    height: 20px;
+    background: #fc9e31;
+    position: absolute;
+}
+.html{
+    width: 100%;
+    animation: html 9s ease-in-out;
+}
+
+.css{
+    width: 80%;
+    animation: css 9s ease-in-out;
+}
+
+.js{
+    width: 10%;
+    animation: js 11s ease-in;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+
+    80%{
+        width: 100%;
+    }
+
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+
+    40%{
+        width: 80%;
+    }
+}
+
+@keyframes js {
+    0%{
+        width: 0%;
+    }
+
+    40%{
+        width: 10%;
+    }
+}
+
+
+// Hero right FINAL
+
+// media hero
+
+@media (width < 1024px){
+    .content-hero{
+        flex-direction: column;
+    }
+}
+
+@media (width < 768px){
+    .content-hero{
+        flex-direction: column;
+    }
+
+    .content-hero .here-me{
+        font-size: 1rem;
+    }
+
+    .content-hero .h1__hero{
+        font-size: 1.25rem;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+    .content-hero .name__hero{
+        font-size: 1.35rem;
+    }
+
+    }
+
+// media hero final

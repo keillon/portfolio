@@ -1,0 +1,279 @@
+// Header
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    width: 100vw;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.container{
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+    max-width: 1448px;
+}
+
+// logo
+.logo-header a{
+    color: var(--txt-color-2);
+    font-size: 2.25rem;
+    cursor: pointer;
+}
+
+.logo-header a:hover{
+    color: var(--txt-color);
+    transition: .5s ease-in-out;
+}
+// logo final
+
+
+// toogle mode final
+.light-mode{
+    width: 5rem;
+    background: linear-gradient(to left, var(--color-bg), var(--color-bg));
+    border-radius: 5rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: 3.8rem;
+    top: .3rem;
+    border: 1px solid var(--txt-color);
+}
+
+.toogle-mode{
+    background-color: var(--light-mode);
+    position: absolute;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    left: .22rem;
+    bottom: .19rem;
+    transition: .3s ease-out;
+}
+
+.light-mode.light .toogle-mode{
+    left: 2.93rem;
+}
+
+
+.icon__dark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6rem;
+    fill: var(--txt-color);
+    position: relative;
+    left: .25rem;
+}
+
+.icon__light{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    fill: var(--txt-color);
+    position: relative;
+    right: .2rem;
+
+}
+
+body.light{
+    background: linear-gradient(bottom, var(--txt-color), var(--txt-color-2));
+    color: var(--color-bg);
+    h1,p,a{
+        color: var(--color-bg);
+    }
+
+    .light-mode{
+        border: 1px solid var(--txt-color-2);
+        background: linear-gradient(to left, var(--bg), var(--bg-2));
+    }
+    
+    .icon__dark{
+        fill: var(--txt-color);
+    }
+
+
+    .btn-contact{
+        background-color: var(--bg-3);
+        color: var(--txt-color);
+    }
+    
+    #btn-menu span{
+        background-color: var(--bg);
+    }
+    
+    .btn__projects{
+        padding: .5rem;
+        background-color: var(--bg-2);
+        border-radius: .5rem;
+        transition: .9s ease-in;   
+        color: var(--txt-color);
+    }
+
+    input{
+        color: var(--txt-color);
+    }
+    
+    .logo-header a{
+        color: var(--bg-2);
+    }
+    
+    .logo-header a:hover{
+        color: var(--red-color);
+        transition: .5s ease-in-out;
+    }
+
+    .btn__projects:hover{
+        background-color: var(--bg-2);
+        color: var(--txt-color);
+    }
+
+    
+    .img-project{
+        height: 310px;
+        width: 280px;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: 0% 0%;
+        opacity: .6;
+    }
+
+    .img-project:hover{
+        background-position: 100%;
+        transition: 2s ease-in;
+        opacity: .9;
+        cursor: pointer;
+    }
+    .nav__bar a{
+        position: relative;
+        color: var(--bg-2);
+    }
+    .nav__bar a:hover{
+        color: var(--bg-2);
+        transition: .5s ease-in-out;
+    }
+    
+    .nav__bar a::after{
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: var(--bg-2);
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        transition: transform .5s ease-in-out;
+        transform-origin: right;
+        transform: scaleX(0);
+    }
+    
+    .nav__bar a:hover::after{
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+    .skills .barras{
+        background-color: var(--bg-2);
+        display: block;
+        height: 20px;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: .5s ease-in-out;
+    }
+    
+    .menu__nav a:hover{
+        background-color: var(--bg-2);
+    }
+
+    .menu__nav a{
+        color: var(--txt-color);
+    }
+}
+// toogle mode final
+
+
+// nav
+.nav__bar{
+    font-size: 1.25rem;
+    
+}
+
+.nav__bar ul{
+    display: flex;
+    gap: 2.25rem;
+    align-items: center;
+    justify-content: center;
+}
+// nav
+
+
+// Hover and After (navbar)
+.nav__bar a{
+    position: relative;
+    color: var(--txt-color-2);
+}
+
+.nav__bar a::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--txt-color);
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: transform .5s ease-in-out;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+.nav__bar a:hover{
+    color: var(--txt-color);
+    transition: .5s ease-in-out;
+}
+
+
+.nav__bar a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+// Hover and After (NAV__BAR A) FINAL
+// Header final
+
+// media nav
+@media (width < 1024px){
+    .nav__bar{
+        display: none;
+    }
+}
+
+@media (width < 475px){
+    .nav__bar{
+        display: none;
+    }
+}
+// media nav final
+
+
+// media light mode
+@media (width > 1024px){
+    .light-mode{
+        right: 32rem;
+    }
+}
+
+
+@media (width < 475px){
+    
+    .light-mode{
+        right: 5rem;
+    }
+}
+// media light mode final

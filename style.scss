@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+
+@import "assets/partials/header";
+@import "assets/partials/colors";
+@import "assets/partials/hero";
+@import "assets/partials/menu";
+@import "assets/partials/footer";
+@import "assets/partials/projects";
+@import "assets/partials/contact";
+
+
+body{
+  font-family: "quicksand", sans-serif;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: linear-gradient(to bottom, var(--bg), var(--bg-2));
+  color: var(--txt-color);
+  overflow-x: hidden;
+  padding-top: 1rem;
+  scroll-behavior: smooth;
+}
+
+
+html{
+  scroll-padding-top: 3rem;
+  scroll-behavior: smooth;
+}
+
+button {
+   font-family: "Quicksand", sans-serif;  
+   cursor: pointer;
+}
+  
+img, svg{
+    width: 100%;
+    fill: var(--txt-color);
+  }
+
+a, ul {
+    color: var(--txt-color);
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar{
+  background: var(--bg-2);
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: gainsboro;
+  border-radius: 10px;
+  border: 1px solid gray;
+}

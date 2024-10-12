@@ -1,0 +1,82 @@
+.menu-mobile{
+    background-color: var(--bg-4);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 2.8rem;
+    left: 0;
+    width: 100%;
+    display: none;
+    z-index: 999;
+}
+
+
+.menu__nav li{
+    list-style: none;
+}
+
+.menu__nav a{
+    display: block;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+}
+
+
+.menu__nav a:hover{
+    background-color: var(--bg-2);
+    backdrop-filter: blur(10px);
+}
+// Burger menu
+
+#btn-menu{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    display: none;
+}
+
+#btn-menu.active .linnear-menu:nth-child(1) {
+    transform: translateY(.45rem) rotate(45deg); /* Sobe o primeiro item e rotaciona em 45 graus */
+}
+
+#btn-menu.active .linnear-menu:nth-child(3) {
+    transform: translateY(-.55rem) rotate(-45deg); /* Desce o terceiro item e rotaciona em -45 graus */
+}
+
+
+#btn-menu.active .linnear-menu:nth-child(2){
+    width: 0;
+}
+
+.linnear-menu{
+    position: relative;
+    height: 3px;
+    background: var(--txt-color);
+    width: 25px;
+    display: block;
+    margin: 5px auto;
+    transform-origin: center;
+    transition: .2s;
+}
+
+.overlay-mobile{
+    background-color: var(--bg-4);
+    backdrop-filter: blur(2px);
+    width: 100vw;
+    height: 100%;
+    margin-top: -1rem;
+    position: absolute;
+    display: none;
+    z-index: 998;
+}
+
+// Burger menu final
+
+@media (width < 1024px) {
+    .menu-mobile{
+        display: none;
+    }
+
+    #btn-menu{
+        display: block;
+    }
+   
+}
