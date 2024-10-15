@@ -677,7 +677,6 @@ body.light .menu__nav a {
   gap: 0.2rem;
   flex-wrap: wrap;
   padding-inline: 2rem;
-  padding-block: 1rem;
 }
 
 .box-projects {
@@ -709,13 +708,40 @@ body.light .menu__nav a {
   background-size: cover;
   background-position: 0% 0%;
   opacity: 0.2;
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  position: relative;
 }
 
 .img-project:hover {
   background-position: 100%;
-  transition: 2s ease-in;
-  opacity: 0.9;
+  transition: 2s ease-out;
+  opacity: 1;
   cursor: pointer;
+}
+
+.img-project:hover ~ .text-projects {
+  position: relative;
+  display: inherit;
+}
+
+.text-projects {
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  display: none;
+  position: absolute;
+}
+
+.text__card {
+  font-size: 1rem;
+  font-weight: 800;
+  padding-block: 0.1rem;
+  padding-inline: 0.2rem;
+}
+
+.line {
+  line-height: calc(1em + 0.5rem);
+  font-weight: 200;
 }
 
 .btn__projects {
