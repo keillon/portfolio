@@ -99,6 +99,18 @@ body.light{
         fill: var(--txt-color);
     }
 
+    .card-popup--2:hover .txt--popup__g{
+        visibility: visible;
+        opacity: 1;
+        color: var(--bg-2);
+    }
+        
+    .txt__card--phone{
+        background-color: var(--bg-2);
+        color: var(--txt-color);
+        font-weight: 800;
+        opacity: 1;
+    }
 
     .btn-contact{
         background-color: var(--bg-3);

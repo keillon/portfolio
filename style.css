@@ -99,6 +99,17 @@ body.light .light-mode {
 body.light .icon__dark {
   fill: var(--txt-color);
 }
+body.light .card-popup--2:hover .txt--popup__g {
+  visibility: visible;
+  opacity: 1;
+  color: var(--bg-2);
+}
+body.light .txt__card--phone {
+  background-color: var(--bg-2);
+  color: var(--txt-color);
+  font-weight: 800;
+  opacity: 1;
+}
 body.light .btn-contact {
   background-color: var(--bg-3);
   color: var(--txt-color);
@@ -597,6 +608,7 @@ body.light .menu__nav a {
   top: -25px;
   opacity: 0;
   transition: opacity 1.7s;
+  font-weight: 800;
 }
 
 .card-popup:hover .txt--popup__w {
@@ -611,12 +623,13 @@ body.light .menu__nav a {
   top: -25px;
   opacity: 0;
   transition: opacity 1.9s;
+  font-weight: 800;
 }
 
 .card-popup--2:hover .txt--popup__g {
   visibility: visible;
   opacity: 1;
-  color: #d6d6d6;
+  color: var(--txt-color-2);
 }
 
 .txt--popup__l {
@@ -631,6 +644,7 @@ body.light .menu__nav a {
   visibility: visible;
   opacity: 1;
   color: #0b65c3;
+  font-weight: 800;
 }
 
 @media (width < 1024px) {
@@ -708,8 +722,8 @@ body.light .menu__nav a {
   background-size: cover;
   background-position: 0% 0%;
   opacity: 0.2;
-  -webkit-backdrop-filter: blur(25px);
-          backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
   position: relative;
 }
 
@@ -754,6 +768,23 @@ body.light .menu__nav a {
 .btn__projects:hover {
   background-color: var(--txt-color);
   color: var(--bg);
+}
+
+.txt__card--phone {
+  position: absolute;
+  background-color: var(--bg);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  top: 50%;
+  padding-inline: 1.75rem;
+  padding-block: 0.2rem;
+  text-align: center;
+  font-weight: 800;
+  pointer-events: none;
+}
+
+.img-project:hover ~ .txt__card--phone {
+  opacity: 0;
 }
 
 .box-contact {

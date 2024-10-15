@@ -64,7 +64,7 @@
     background-size: cover;
     background-position: 0% 0%;
     opacity: .2;
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(50px);
     position: relative;
 }
 
@@ -114,4 +114,23 @@
     color: var(--bg);
 }
 
+.txt__card--phone{
+    position: absolute;
+    background-color: var(--bg);
+    backdrop-filter: blur(50px);
+    top: 50%;
+    padding-inline: 1.75rem;
+    padding-block: .2rem;
+    text-align: center;
+    font-weight: 800;
+    pointer-events: none;
+}
+
+.img-project:hover ~ .txt__card--phone{
+    opacity: 0;
+}
 // END BTN
+
+// media card
+
+// media card final
