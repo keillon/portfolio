@@ -350,6 +350,10 @@ body.light .menu__nav a {
   color: #fc9e31;
 }
 
+.scss__icon {
+  color: #dd31fc;
+}
+
 .h3__hero {
   font-size: 2rem;
   text-transform: uppercase;
@@ -410,6 +414,12 @@ body.light .menu__nav a {
   position: absolute;
 }
 
+.barras > .scss {
+  height: 20px;
+  background: #dd31fc;
+  position: absolute;
+}
+
 .html {
   width: 100%;
   animation: html 9s ease-in-out;
@@ -423,6 +433,11 @@ body.light .menu__nav a {
 .js {
   width: 10%;
   animation: js 11s ease-in;
+}
+
+.scss {
+  width: 80%;
+  animation: scss 9s ease-in-out;
 }
 
 @keyframes html {
@@ -447,6 +462,14 @@ body.light .menu__nav a {
   }
   40% {
     width: 10%;
+  }
+}
+@keyframes scss {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 80%;
   }
 }
 @media (width < 1024px) {
