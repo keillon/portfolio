@@ -37,14 +37,14 @@
     transform: translateY(.45rem) rotate(45deg); /* Sobe o primeiro item e rotaciona em 45 graus */
 }
 
+#btn-menu.active .linnear-menu:nth-child(2){
+    width: 0;
+}
+
 #btn-menu.active .linnear-menu:nth-child(3) {
     transform: translateY(-.55rem) rotate(-45deg); /* Desce o terceiro item e rotaciona em -45 graus */
 }
 
-
-#btn-menu.active .linnear-menu:nth-child(2){
-    width: 0;
-}
 
 .linnear-menu{
     position: relative;

@@ -7,7 +7,6 @@
     outline: 0;
 }
 
-
 @import "assets/partials/header";
 @import "assets/partials/colors";
 @import "assets/partials/hero";
@@ -15,7 +14,6 @@
 @import "assets/partials/footer";
 @import "assets/partials/projects";
 @import "assets/partials/contact";
-
 
 body{
   font-family: "quicksand", sans-serif;
@@ -28,7 +26,6 @@ body{
   padding-top: 1rem;
   scroll-behavior: smooth;
 }
-
 
 html{
   scroll-padding-top: 3rem;

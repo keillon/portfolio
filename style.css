@@ -62,7 +62,7 @@
 }
 
 .light-mode.light .toogle-mode {
-  left: 2.93rem;
+  left: 2.97rem;
 }
 
 .icon__dark {
@@ -532,12 +532,12 @@ body.light .menu__nav a {
   transform: translateY(0.45rem) rotate(45deg); /* Sobe o primeiro item e rotaciona em 45 graus */
 }
 
-#btn-menu.active .linnear-menu:nth-child(3) {
-  transform: translateY(-0.55rem) rotate(-45deg); /* Desce o terceiro item e rotaciona em -45 graus */
-}
-
 #btn-menu.active .linnear-menu:nth-child(2) {
   width: 0;
+}
+
+#btn-menu.active .linnear-menu:nth-child(3) {
+  transform: translateY(-0.55rem) rotate(-45deg); /* Desce o terceiro item e rotaciona em -45 graus */
 }
 
 .linnear-menu {
@@ -681,135 +681,88 @@ body.light .menu__nav a {
     gap: 0.75rem;
   }
 }
-.content-projects {
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-projects {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 0.2rem;
 }
 
-.tittle-box {
-  text-align: center;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  margin-block: -0.6rem;
-  position: absolute;
-  top: -3rem;
-  left: 100px;
-}
-
-.tittle-box a:hover {
-  transform: scale(1.1);
-  transition: 0.5s ease-in;
-}
-
-.container-projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.2rem;
-  flex-wrap: wrap;
-  padding-inline: 2rem;
-}
-
-.box-projects {
-  flex: 1;
-  max-width: 280px;
-  min-height: 100px;
-  margin-inline: 25px;
-  margin-block: 2.5rem;
+.card-image {
+  width: 25rem;
+  border-radius: 1rem;
+  opacity: 0.8;
+  filter: blur(0);
   position: relative;
 }
-
-.text-box {
-  font-size: 1.25rem;
-  width: 25ch;
-  flex: 1;
-  text-align: center;
-}
-
-.tittle-projects {
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin-block: 1.8rem;
-}
-
-.img-project {
-  height: 310px;
-  width: 280px;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: 0% 0%;
-  opacity: 0.2;
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
-  position: relative;
-}
-
-.img-project:hover {
-  background-position: 100%;
-  transition: 2s ease-out;
+.card-image:hover {
   opacity: 1;
+  transition: 1.5s ease-in-out;
+  width: 30rem;
   cursor: pointer;
+  filter: blur(1px);
 }
 
-.img-project:hover ~ .text-projects {
-  position: relative;
-  display: inherit;
-}
-
-.text-projects {
-  padding-block: 0.5rem;
-  padding-inline: 0.5rem;
-  display: none;
-  position: absolute;
-}
-
-.text__card {
-  font-size: 1rem;
+.card-title {
+  max-width: 50ch;
+  background-color: var(--light-mode);
+  color: var(--text-color);
+  border-radius: 1rem;
+  padding: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 800;
-  padding-block: 0.1rem;
-  padding-inline: 0.2rem;
-}
-
-.line {
-  line-height: calc(1em + 0.5rem);
-  font-weight: 200;
-}
-
-.btn__projects {
-  padding: 0.5rem;
-  background-color: var(--bg-2);
-  border-radius: 0.5rem;
-  transition: 0.9s ease-in;
-}
-
-.btn__projects:hover {
-  background-color: var(--txt-color);
-  color: var(--bg);
-}
-
-.txt__card--phone {
-  position: absolute;
-  background-color: var(--bg);
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
-  top: 50%;
-  padding-inline: 1.75rem;
-  padding-block: 0.2rem;
+  letter-spacing: 1px;
   text-align: center;
-  font-weight: 800;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+  transition-delay: 0.8s;
   pointer-events: none;
 }
 
-.img-project:hover ~ .txt__card--phone {
-  opacity: 0;
+.card-projects:hover .card-title {
+  opacity: 1;
 }
 
+.card-projects:not(:hover) .card-title {
+  opacity: 0;
+  transition: opacity 0s;
+}
+
+.wrapper-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+@media (width < 580px) {
+  .card-image {
+    width: 20rem;
+  }
+  .card-image:hover {
+    width: 21rem;
+    opacity: 1;
+    transition: 1.5s ease-in-out;
+    cursor: pointer;
+    filter: blur(1px);
+  }
+  .card-title {
+    max-width: 33ch;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+    transition-delay: 0.8s;
+    pointer-events: none;
+  }
+}
 .box-contact {
   display: flex;
   align-items: center;

@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // hamburguer menu final
 
-
 // transitions JS
 window.sr = ScrollReveal({reset: true});
 
@@ -48,7 +47,7 @@ sr.reveal('.icons-footer', {rotate: {x: -100, y:0, z:0}, duration:3500});
 let trilho = document.getElementById('mode');
 let body = document.getElementById('body');
 
-trilho.addEventListener('click', ()=>{
+trilho.addEventListener('click', () =>{
     trilho.classList.toggle('light')
     body.classList.toggle('light')
 })
