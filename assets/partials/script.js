@@ -40,6 +40,8 @@ sr.reveal('.right-hero', {rotate: {x: 100, y:1, z:0}, duration:3300});
 sr.reveal('#contact', {rotate: {x: 0, y:70, z:0}, duration:2900});
 sr.reveal('.footer', {rotate: {x: 0, y:70, z:0}, duration:2900});
 sr.reveal('.icons-footer', {rotate: {x: -100, y:0, z:0}, duration:3500});
+sr.reveal('.projects', {rotate: {x: 0, y:70, z:0}, duration:2900});
+
 // transitions JS final
 
 // light-mode

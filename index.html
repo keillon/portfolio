@@ -28,7 +28,11 @@
     <!-- HEADER -->
     <!-- menu desktop -->
     <header class="header container">
-      <span class="logo-header"><a href="/" target="_self">Keillon.</a></span>
+      <span class="logo-header"
+        ><a href="/" target="_self" title="Recarregar a página"
+          >Keillon.</a
+        ></span
+      >
       <nav class="nav__bar">
         <ul class="ul__nav">
           <li><a class="a__nav" href="/" target="_self">Home</a></li>
@@ -62,7 +66,7 @@
       <!-- menu mobile final -->
 
       <!-- light mode -->
-      <div class="light-mode" id="mode">
+      <div class="light-mode" id="mode" title="Mudar modo (Dark ou Light)">
         <div class="toogle-mode"></div>
         <div class="dark__content">
           <svg
@@ -94,7 +98,9 @@
       </div>
       <!-- light mode final -->
     </header>
+
     <div id="overlay-mobile" class="overlay-mobile"></div>
+
     <!-- END HEADER -->
 
     <!-- SECTIONS -->
@@ -109,7 +115,11 @@
           </h1>
         </div>
         <div class="social-media">
-          <a href="#contact"><button class="here-me">Contate-me</button></a>
+          <a href="#contact"
+            ><button class="here-me" title="Entrar em contato">
+              Contate-me
+            </button></a
+          >
 
           <div class="icons">
             <div class="card-popup card">
@@ -148,47 +158,23 @@
           <div class="skills__icons">
             <span class="text__skills">HTML5</span>
             <div class="html__icon fz-5">
-              <ion-icon name="logo-html5"></ion-icon>
+              <ion-icon name="logo-html5" title="HTML"></ion-icon>
             </div>
-            <section class="skills">
-              <div class="my-skills">
-                <span class="barras"><span class="html"></span></span>
-                100%
-              </div>
-            </section>
 
             <span class="text__skills">CSS</span>
             <div class="css__icon fz-5">
-              <ion-icon name="logo-css3"></ion-icon>
+              <ion-icon name="logo-css3" title="CSS"></ion-icon>
             </div>
-            <section class="skills">
-              <div class="my-skills">
-                <span class="barras"><span class="css"></span></span>
-                80%
-              </div>
-            </section>
 
             <span class="text__skills">JAVASCRIPT</span>
             <div class="js__icon fz-5">
-              <ion-icon name="logo-javascript"></ion-icon>
+              <ion-icon name="logo-javascript" title="JAVASCRIPT"></ion-icon>
             </div>
-            <section class="skills">
-              <div class="my-skills">
-                <span class="barras"><span class="js"></span></span>
-                20%
-              </div>
-            </section>
 
             <span class="text__skills">SCSS</span>
             <div class="scss__icon fz-5">
-              <ion-icon name="logo-sass"></ion-icon>
+              <ion-icon name="logo-sass" title="SCSS"></ion-icon>
             </div>
-            <section class="skills">
-              <div class="my-skills">
-                <span class="barras"><span class="scss"></span></span>
-                60%
-              </div>
-            </section>
           </div>
         </div>
       </div>
@@ -197,40 +183,54 @@
 
     <!-- projects -->
 
-    <section class="projects">
+    <section class="projects" id="projects">
+      <h3 class="h3__hero text-projects">Meus projetos</h3>
       <div class="wrapper-cards">
-        <div class="card-projects">
-          <a href="https://keillon.github.io/site-coffee/" target="_blank"><img src="assets/img/coffee-page.png" alt="" class="card-image"/></a>
-          
-            <span class="card-title"
-              >Aqui desenvolvi um site pelo Bootstrap,que é um framework web com
-              código-fonte aberto para desenvolvimento de componentes de
-              interface e front-end para sites e aplicações web, usando HTML,
-              CSS e JavaScript, baseado em modelos de design para a tipografia,
-              melhorando a experiência do usuário em um site amigável e
-              responsivo.
-            </span>
-          
+        <div class="card-projects" title="Site cafeteria">
+          <a href="https://keillon.github.io/site-coffee/" target="_blank"
+            ><img
+              src="assets/img/coffee-page.png"
+              alt="Imagem da página"
+              class="card-image"
+          /></a>
+
+          <span class="card-title"
+            >Aqui desenvolvi um site pelo Bootstrap,que é um framework web com
+            código-fonte aberto para desenvolvimento de componentes de interface
+            e front-end para sites e aplicações web, usando HTML, CSS e
+            JavaScript, baseado em modelos de design para a tipografia,
+            melhorando a experiência do usuário em um site amigável e
+            responsivo.
+          </span>
         </div>
-        <div class="card-projects">
-          <a href="https://hbo-site.netlify.app/" target="_blank"><img src="assets/img/hbo.png" alt="" class="card-image"/></a>
-          
-            <span class="card-title"
-              >Este site é uma cópia da HBO Max, sem interações, exceto a de login e botões. É
-algo mais voltado para testar meus conhecimentos e foi uma proposta do curso.
-            </span>
-          
+        <div class="card-projects" title="Site HBO">
+          <a href="https://hbo-site.netlify.app/" target="_blank"
+            ><img
+              src="assets/img/hbo.png"
+              alt="Imagem da página"
+              class="card-image"
+          /></a>
+
+          <span class="card-title"
+            >Este site é uma cópia da HBO Max, sem interações, exceto a de login
+            e botões. É algo mais voltado para testar meus conhecimentos e foi
+            uma proposta do curso.
+          </span>
         </div>
-        
-        <div class="card-projects">
-          <a href="https://pokedex-0002.netlify.app/" target="_blank"><img src="assets/img/pokedex.png" alt="" class="card-image"/></a>
-          
-            <span class="card-title"
-              >Aqui fiz uso de API, para fortificar meus conhecimentos em JavaScript. meu primeiro projeto usando essa linguagem.
-            </span>
-          
+
+        <div class="card-projects" title="Site pokedex">
+          <a href="https://pokedex-0002.netlify.app/" target="_blank"
+            ><img
+              src="assets/img/pokedex.png"
+              alt="Imagem da página"
+              class="card-image"
+          /></a>
+
+          <span class="card-title"
+            >Aqui fiz uso de API, para fortificar meus conhecimentos em
+            JavaScript. meu primeiro projeto usando essa linguagem.
+          </span>
         </div>
-        
       </div>
     </section>
 
@@ -253,6 +253,7 @@ algo mais voltado para testar meus conhecimentos e foi uma proposta do curso.
               name="text"
               required
               class="name"
+              title="Digite seu Nome"
             />
           </div>
 
@@ -264,6 +265,7 @@ algo mais voltado para testar meus conhecimentos e foi uma proposta do curso.
               required
               name="email"
               class="email"
+              title="Digite seu Email"
             />
           </div>
 
@@ -276,6 +278,7 @@ algo mais voltado para testar meus conhecimentos e foi uma proposta do curso.
               name="tel"
               required
               class="number"
+              title="Digite seu Número"
             />
           </div>
 
@@ -288,6 +291,7 @@ algo mais voltado para testar meus conhecimentos e foi uma proposta do curso.
               rows="10"
               cols="50"
               maxlength="500"
+              title="O que deseja conversar?"
               required
             ></textarea>
           </div>
@@ -298,6 +302,7 @@ algo mais voltado para testar meus conhecimentos e foi uma proposta do curso.
               name="submit"
               id="btnCheck"
               class="btn-contact"
+              title="Enviar"
             >
               Enviar
             </button>
