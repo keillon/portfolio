@@ -41,6 +41,8 @@ sr.reveal('#contact', {rotate: {x: 0, y:70, z:0}, duration:2900});
 sr.reveal('.footer', {rotate: {x: 0, y:70, z:0}, duration:2900});
 sr.reveal('.icons-footer', {rotate: {x: -100, y:0, z:0}, duration:3500});
 sr.reveal('.projects', {rotate: {x: 0, y:70, z:0}, duration:2900});
+sr.reveal('.project-content', {rotate: {x: 0, y:70, z:0}, duration:3500});
+sr.reveal('.icon-project', {rotate: {x:0, y:70, z:0}, duration:3500});
 
 // transitions JS final
 
