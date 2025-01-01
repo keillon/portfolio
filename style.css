@@ -104,6 +104,11 @@ body.light .icon__dark {
 body.light .git__icon {
   color: var(--bg-2);
 }
+body.light .card-popup--2:hover .txt--popup__g {
+  visibility: visible;
+  opacity: 1;
+  color: var(--bg-2);
+}
 body.light .txt__card--phone {
   background-color: var(--bg-2);
   color: var(--txt-color);
@@ -124,7 +129,7 @@ body.light .logo-header a {
   color: var(--bg-2);
 }
 body.light .logo-header a:hover {
-  color: var(--red-color);
+  opacity: 0.7;
   transition: 0.5s ease-in-out;
 }
 body.light .nav__bar a {

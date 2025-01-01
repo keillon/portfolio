@@ -101,6 +101,12 @@ body.light {
     color: var(--bg-2);
   }
 
+.card-popup--2:hover .txt--popup__g{
+    visibility: visible;
+    opacity: 1;
+    color: var(--bg-2);
+}
+
   .txt__card--phone {
     background-color: var(--bg-2);
     color: var(--txt-color);
@@ -126,7 +132,7 @@ body.light {
   }
 
   .logo-header a:hover {
-    color: var(--red-color);
+    opacity: .7;
     transition: 0.5s ease-in-out;
   }
 

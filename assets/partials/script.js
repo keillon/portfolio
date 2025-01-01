@@ -42,7 +42,13 @@ sr.reveal('.footer', {rotate: {x: 0, y:70, z:0}, duration:2900});
 sr.reveal('.icons-footer', {rotate: {x: -100, y:0, z:0}, duration:3500});
 sr.reveal('.projects', {rotate: {x: 0, y:70, z:0}, duration:2900});
 sr.reveal('.project-content', {rotate: {x: 0, y:70, z:0}, duration:3500});
-sr.reveal('.icon-project', {rotate: {x:0, y:70, z:0}, duration:3500});
+sr.reveal('.icon-project', {rotate: {x:0, y:70, z:0}, duration:5000});
+sr.reveal('.text-project', {rotate: {x:0, y:70, z:0}, duration:3900});
+sr.reveal('.img-project', {rotate: {x:0, y:70, z:0}, duration:4800});
+sr.reveal('.card', {rotate: {x:20, y:50, z:0}, duration:4200});
+sr.reveal('.text-projects', {rotate: {x:20, y:50, z:0}, duration:4200});
+sr.reveal('.fz-5', {rotate: {x:20, y:50, z:0}, duration:4500});
+sr.reveal('.text__skills', {rotate: {x:20, y:60, z:0}, duration:4200});
 
 // transitions JS final
 
