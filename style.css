@@ -152,6 +152,9 @@ body.light .icon-project {
 body.light .project-content::after {
   background-color: var(--bg-2);
 }
+body.light .text-projects {
+  color: var(--bg-2);
+}
 body.light .nav__bar a::after {
   content: "";
   width: 100%;
