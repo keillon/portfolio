@@ -729,18 +729,35 @@ body.light .menu__nav a {
     width: 20rem;
   }
 }
-@media (width <= 388px) {
+@media (width <= 400px) {
   .projects {
     margin-top: 10rem;
-    width: 500px;
+    width: 390px;
   }
   .wrapper-cards {
-    max-width: 600px;
-    width: 400px;
-    padding: 0.8rem;
+    min-width: 300px;
+    width: 370px;
+    padding: 1rem;
   }
   .wrapper-cards .img-project {
-    width: 20rem;
+    width: 17rem;
+  }
+}
+@media (width < 375px) {
+  .projects {
+    margin-top: 10rem;
+    width: 350px;
+  }
+  .wrapper-cards {
+    min-width: 300px;
+    width: 300px;
+    padding: 1rem;
+  }
+  .wrapper-cards .img-project {
+    width: 16rem;
+  }
+  .wrapper-cards .text-project {
+    font-size: 0.8rem;
   }
 }
 .box-contact {
