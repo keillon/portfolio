@@ -15,6 +15,7 @@
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  overflow: hidden;
 }
 .wrapper-cards {
   display: flex;
@@ -86,7 +87,6 @@
   .btn-project:hover {
     background-color: var(--txt-color);
     color: var(--bg-2);
-    font-size: 1.05rem;
   }
 }
 .icon-project {
@@ -101,6 +101,26 @@
 // container
 
 // @ media
+
+@media (width <= 1024px) {
+  .projects {
+    margin-top: 10rem;
+    width: 700px;
+  }
+  .wrapper-cards {
+    margin: 2rem 5rem;
+    max-width: 800px;
+    width: 650px;
+    padding: 0.8rem;
+    .text-project{
+      width: 650px;
+    }
+    .img-project {
+      width: 35rem;
+    }
+  }
+}
+
 @media (width <= 980px) {
   .projects {
     margin-top: 10rem;
@@ -114,14 +134,13 @@
     .img-project {
       width: 35rem;
     }
-
-
   }
 }
 @media (width <= 768px) {
   .projects {
     margin-top: 10rem;
-    width: 700px;
+    width: 650px;
+
   }
   .wrapper-cards {
     margin: 2rem 5rem;
@@ -131,60 +150,69 @@
     .img-project {
       width: 35rem;
     }
-
   }
 }
-@media (width <= 578px) {
+
+
+@media (width <= 650px) {
+  .projects {
+    margin-top: 10rem;
+    width: 510px;
+  }
+  .wrapper-cards {
+    min-width: 300px;
+    width: 490px;
+    padding: 1rem;
+    .text-project{
+      width: 420px;
+    }
+    .img-project {
+      width: 30rem;
+    }
+  }
+}
+
+@media (width < 578px) {
   .projects {
     margin-top: 10rem;
     width: 400px;
   }
   .wrapper-cards {
     max-width: 800px;
-    width:400px;
+    width: 400px;
     padding: 1rem;
-    .img-project {
-      width: 20rem;
-    }
-
-  }
-}
-@media (width <= 400px) {
-  .projects {
-    margin-top: 10rem;
-    width: 390px;
-  }
-  .wrapper-cards {
-    min-width: 300px;
-    width:370px;
-    padding: 1rem;
-    .img-project {
-      width: 17rem;
-    }
-
-  }
-}
-@media (width < 375px) {
-  .projects {
-    margin-top: 10rem;
-    width: 350px;
-  }
-  .wrapper-cards {
-    min-width: 300px;
-    width:300px;
-    padding: 1rem;
-    .img-project {
-      width: 16rem;
-    }
-
     .text-project{
-      font-size: .8rem;
+      width: 390px;
+      p{
+        font-size: 1.5rem;
+      }
     }
-
+    .img-project {
+      width: 22rem;
+    }
   }
 }
 
-
+@media (width < 395px) {
+  .projects {
+    margin-top: 10rem;
+    width: 400px;
+  }
+  .wrapper-cards {
+    max-width: 800px;
+    width: 360px;
+    padding: 1rem;
+    .text-project{
+      width: 350px;
+      p{
+        font-size: 1.5rem;
+      }
+    }
+    .img-project {
+      width: 18rem;
+    }
+  }
+}
 
 
 // @ media

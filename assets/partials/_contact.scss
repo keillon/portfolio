@@ -11,17 +11,18 @@
 .inputs{
     margin-block: 1rem;
     color: var(--text-white);
-    max-width: 300px;
+    max-width: 800px;
 }
 
 .inputs input{
-    width: 300px;
-    height: 2rem;
+    width: 800px;
+    height: 3rem;
     background-color: var(--bg-2);
     border: 1px solid var(--color-bg);
     padding-inline: .4rem;
     margin-top: .5rem;
     color: var(--text-white);
+    font-size: .9rem;
 }
 
 
@@ -47,13 +48,13 @@ h3{
 }
 
 textarea{
-    max-width: 300px;
+    width: 800px;
     margin-block: .7rem;
     background-color: var(--bg-2);
     resize: none;
     padding-block: .25rem;
-    padding-inline: .25rem;
-    font-size: .9rem;
+    padding-inline: .35rem;
+    font-size: 1rem;
     color: var(--txt-color);
     border: 1px solid var(--color-bg);
 }
@@ -72,12 +73,21 @@ input:invalid{
     color: var(--bg-2);
     background-color: var(--txt-color);
     transition: .5s ease-in;
-    scale: 1.02;
 }
 
 
 @media (width < 768px){
     h3{
         font-size: calc(2.5rem - 1rem);
+    }
+
+    .inputs, .inputs input, textarea{
+        width: 350px;
+    }
+}
+
+@media (width > 768px){
+    .inputs,.inputs input,textarea {
+        width: 100%;
     }
 }

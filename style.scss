@@ -14,6 +14,7 @@
 @import "assets/partials/footer";
 @import "assets/partials/projects";
 @import "assets/partials/contact";
+@import "assets/partials/toogle-lang";
 
 body{
   font-family: "quicksand", sans-serif;
@@ -30,11 +31,13 @@ body{
 html{
   scroll-padding-top: 3rem;
   scroll-behavior: smooth;
+  scrollbar-width: thin !important;
+  scrollbar-color: gainsboro var(--bg-2) !important;
 }
 
 button {
-   font-family: "Quicksand", sans-serif;  
-   cursor: pointer;
+  font-family: "Quicksand", sans-serif;  
+  cursor: pointer;
 }
   
 img, svg{
@@ -57,12 +60,12 @@ button {
 }
 
 ::-webkit-scrollbar{
-  background: var(--bg-2);
-  width: 1rem;
+  background: var(--bg-2) !important;
+  width: 1rem !important;
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: gainsboro;
-  border-radius: 10px;
-  border: 1px solid gray;
+  background-color: gainsboro !important;
+  border-radius: 10px !important;
+  border: 1px solid gray !important;
 }

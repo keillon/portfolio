@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // hamburguer menu final
 
 // transitions JS
-window.sr = ScrollReveal({ reset: true })
+window.sr = ScrollReveal({ reset: false })
 
 sr.reveal('.h1__hero', { rotate: { x: 80, y: 0, z: 0 }, duration: 3000 })
 sr.reveal('.here-me', { rotate: { x: 2, y: 70, z: 5 }, duration: 3000 })
@@ -88,3 +88,78 @@ window.addEventListener('load', loadScheme)
 // chamar o carregar o tema
 
 // light-mode final
+
+// toggle language
+
+// variaveis para selecionar o idioma
+const selectedLangEn = document.querySelector('#en')
+const selectedLangPt = document.querySelector('#pt')
+
+let about = document.getElementsByTagName('ola')
+let project = document.getElementsByClassName('project')
+let contact = document.getElementsByClassName('contact')
+let hero = document.querySelector('.h1__hero')
+let dropdown = document.querySelector('.dropdown-lang')
+// variaveis para selecionar o idioma
+
+function updateMenuLanguage (lang) {
+  // Menus desktop
+  const navItemsDesktop = document.querySelectorAll('.a__nav')
+  navItemsDesktop[1].textContent = traducoes[lang].sobre // "Sobre mim"
+  navItemsDesktop[2].textContent = traducoes[lang].projetos // "Projetos"
+  navItemsDesktop[3].textContent = traducoes[lang].contato // "Contate-me"
+
+  // Menus mobile
+  const navItemsMobile = document.querySelectorAll('.a__menu')
+  navItemsMobile[1].textContent = traducoes[lang].sobre // "Sobre mim"
+  navItemsMobile[2].textContent = traducoes[lang].projetos // "Projetos"
+  navItemsMobile[3].textContent = traducoes[lang].contato // "Contate-me"
+
+  // Se necessário, atualizar outros elementos, como o "hero" ou "social"
+  hero.textContent = traducoes[lang].hero // Atualiza a seção do herói também
+}
+
+const traducoes = {
+  pt: {
+    sobre: 'Sobre mim',
+    projetos: 'Projetos',
+    contato: 'Contato',
+    hero: 'Olá, me chamo Keillon, Sou desenvolvedor Front-end com foco no desenvolvimento de projetos como landing pages. Busco aprender novas tecnologias e ferramentas para me especializar como desenvolvedor Full-stack.',
+    Especialidades: 'Minhas especialidades'
+  },
+  en: {
+    sobre: 'About me',
+    projetos: 'Projects',
+    contato: 'Contact',
+    hero: `Hello, I'm Keillon. I am a Front-end developer focused on developing projects such as landing pages. I am looking for new technologies and tools to specialize as a Full-stack developer.`,
+    Especialidades: 'My specialties'
+  }
+}
+
+let langActual = 'en'
+
+selectedLangEn.addEventListener('click', () => {
+  langActual = 'en'
+  about.textContent = traducoes[langActual].sobre
+  project.textContent = traducoes[langActual].projetos
+  contact.textContent = traducoes[langActual].contato
+  hero.textContent = traducoes[langActual].hero
+  updateMenuLanguage(langActual)
+})
+
+selectedLangPt.addEventListener('click', () => {
+  langActual = 'pt'
+  about.textContent = traducoes[langActual].sobre
+  project.textContent = traducoes[langActual].projetos
+  contact.textContent = traducoes[langActual].contato
+  hero.textContent = traducoes[langActual].hero
+  updateMenuLanguage(langActual)
+})
+
+const langToggle = document.getElementById('langToggle')
+
+langToggle.addEventListener('click', () => {
+  selectedLangEn.classList.toggle('hide')
+  selectedLangPt.classList.toggle('hide')
+  dropdown.classList.toggle('hide')
+})

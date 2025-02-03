@@ -1,0 +1,16 @@
+{
+    "pt":{
+        "Sobre mim": "Sobre mim",
+        "Projetos":"Projetos",
+        "Contato":"Contato",
+        "hero": "Olá, me chamo Keillon, e estou atualmente estudando HTML, CSS & JAVASCRIPT, estou colocando em prática tudo que aprendi e estou aprendendo ao longo do curso.",
+        "Especialidades": "Minhas especialidades"
+    },
+    "en":{
+        "About me": "About me",
+        "Projects": "Projects",
+        "Contact": "Contact",
+        "hero": "Hello, my name is Keillon, and I am currently studying HTML, CSS & JAVASCRIPT, I am putting into practice everything I have learned and am learning throughout the course.",
+        "specialits": "My specialties"
+    }
+}

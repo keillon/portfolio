@@ -29,75 +29,100 @@
     <!-- menu desktop -->
     <header class="header container">
       <span class="logo-header"
-        ><a href="/" title="Recarregar a página"
-          >Keillon.</a
-        ></span
+        ><a href="/" title="Recarregar a página">Keillon.</a></span
       >
       <nav class="nav__bar">
         <ul class="ul__nav">
-          <li><a class="a__nav" href="/" target="_self">Home</a></li>
-          <li><a class="a__nav" href="#about">Sobre</a></li>
-          <li><a class="a__nav" href="#projects">Projetos</a></li>
-          <li><a class="a__nav" href="#contact">Contato</a></li>
-          <li><a class="a__menu" href="#social">Social</a></li>
+          <li><a class="a__nav"  href="/" target="_self">Home</a></li>
+          <li><a class="a__nav about" href="#about">Sobre mim</a></li>
+          <li><a class="a__nav project" href="#projects">Projetos</a></li>
+          <li><a class="a__nav contact" href="#contact">Contate-me</a></li>
+          <li><a class="a__nav" href="#social">Social</a></li>
+
+          
         </ul>
       </nav>
+
+
+      <div class="menu__light">
+
+      <button class="toggle-language" id="langToggle">
+       idioma
+        <div class="dropdown-lang">
+          <div class="flags">
+            <span class="selected" id="en">EN</span>
+            <img src="assets/img/flag-us.svg" alt="">
+          </div>
+          <div class="flags">
+            <span class="selected" id="pt">PT</span>
+            <img src="assets/img/flag-brazil.svg" alt="">
+          </div>
+        </div>
+    </button>
+
+<!-- light mode -->
+<div class="light-mode" id="mode" title="Mudar modo (Dark ou Light)">
+  <div class="toogle-mode"></div>
+  <div class="dark__content">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      class="icon__dark"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </div>
+
+  <div class="light__content">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      class="icon__light"
+    >
+      <path
+        d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+      />
+    </svg>
+  </div>
+</div>
+</div>
+<!-- light mode final -->
+
+
       <!-- menu desktop final-->
 
       <!-- menu mobile -->
       <div class="menu-mobile" id="menu-mobile">
         <nav class="menu__nav">
           <ul class="ul__mobile">
-            <li><a class="a__menu" href="/" target="_self">Home</a></li>
-            <li><a class="a__menu" href="#about">Sobre</a></li>
+            <li><a class="a__menu"  href="/" target="_self">Home</a></li>
+            <li><a class="a__menu" name="ola" href="#about">Sobre mim</a></li>
             <li><a class="a__menu" href="#projects">Projetos</a></li>
-            <li><a class="a__menu" href="#contact">Contato</a></li>
+            <li><a class="a__menu" href="#contact">Contate-me</a></li>
             <li><a class="a__menu" href="#social">Social</a></li>
           </ul>
         </nav>
       </div>
+</div>
 
+
+
+    <!-- menu mobile light mode -->
       <button onclick="toggleMenu()" id="btn-menu">
         <span class="linnear-menu"></span>
         <span class="linnear-menu"></span>
         <span class="linnear-menu"></span>
       </button>
-
       <!-- menu mobile final -->
 
-      <!-- light mode -->
-      <div class="light-mode" id="mode" title="Mudar modo (Dark ou Light)">
-        <div class="toogle-mode"></div>
-        <div class="dark__content">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="icon__dark"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </div>
-
-        <div class="light__content">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="icon__light"
-          >
-            <path
-              d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
-            />
-          </svg>
-        </div>
-      </div>
-      <!-- light mode final -->
     </header>
+    
 
     <div id="overlay-mobile" class="overlay-mobile"></div>
 
@@ -108,11 +133,8 @@
       <div class="left-hero">
         <div class="tittle__hero-left">
           <h1 class="h1__hero line-h">
-            Olá, me chamo <span class="name__hero">keillon</span> , e estou
-            atualmente estudando <strong>HTML,CSS & JAVASCRIPT</strong>, estou
-            colocando em prática tudo que aprendi e estou aprendendo ao longo do
-            curso.
-          </h1>
+            Olá, me chamo <span class="name__hero">keillon. </span>Sou desenvolvedor Front-end com foco no desenvolvimento de projetos como landing pages. Busco aprender novas tecnologias e ferramentas para me especializar como desenvolvedor Full-stack.
+</h1>
         </div>
         <div class="social-media">
           <a href="#contact"
@@ -180,7 +202,6 @@
             <div class="scss__icon fz-5">
               <ion-icon name="logo-sass" title="SCSS"></ion-icon>
             </div>
-      
           </div>
         </div>
       </div>
@@ -192,92 +213,203 @@
     <section class="projects container" id="projects">
       <h3 class="h3__hero text-projects">Meus projetos</h3>
       <div class="wrapper-cards" id="wrapper-cards">
-
         <div class="project-content container">
-          <img class="img-project" src="assets/img/Coffee-sanji.webp" alt="Site cafeteria">
+          <img
+            class="img-project"
+            src="assets/img/Coffee-sanji.webp"
+            alt="Site cafeteria"
+          />
           <div class="text-project">
-            <p>Site criado a partir do Bootstrap, colocando em prática ferramentas que são disponibilizadas por ele.</p>
-          <a href="https://keillon.github.io/site-coffee/" target="_blank"><button class="btn-project">Ver projeto</button></a>
-          <div class="icon-project">
-            <p>Ferramentas:</p>
-            <ion-icon class="icon-project" name="logo-html5" title="HTML"></ion-icon>
-            <ion-icon class="icon-project" name="logo-css3" title="CSS"></ion-icon>
-            <i class="fa-brands fa-bootstrap icon-project" title="Bootstrap"></i>
-          </div>
+            <p>
+              Site criado a partir do Bootstrap, colocando em prática
+              ferramentas que são disponibilizadas por ele.
+            </p>
+            <a href="https://keillon.github.io/site-coffee/" target="_blank"
+              ><button class="btn-project">Ver projeto</button></a
+            >
+            <div class="icon-project">
+              <p>Ferramentas:</p>
+              <ion-icon
+                class="icon-project"
+                name="logo-html5"
+                title="HTML"
+              ></ion-icon>
+              <ion-icon
+                class="icon-project"
+                name="logo-css3"
+                title="CSS"
+              ></ion-icon>
+              <i
+                class="fa-brands fa-bootstrap icon-project"
+                title="Bootstrap"
+              ></i>
+            </div>
           </div>
         </div>
 
         <div class="project-content reverse">
-          <img class="img-project" src="assets/img/Clíma.webp" alt="Clima site">
-          <div class="text-project ">
-            <p>Projeto em JavaScript para consultar o clima, puxando os dados da API e manipulando o DOM.</p>
-          <a href="https://keillon.github.io/Weather-clima/" target="_blank"><button class="btn-project">Ver projeto</button></a>
-          <div class="icon-project">
-            <p>Ferramentas:</p>
-            <ion-icon class="icon-project" name="logo-html5" title="HTML"></ion-icon>
-            <ion-icon class="icon-project" name="logo-css3" title="CSS"></ion-icon>
-            <ion-icon class="icon-project" name="logo-javascript" title="JAVASCRIPT"></ion-icon>
-          </div>
+          <img
+            class="img-project"
+            src="assets/img/Clíma.webp"
+            alt="Clima site"
+          />
+          <div class="text-project">
+            <p>
+              Projeto em JavaScript para consultar o clima, puxando os dados da
+              API e manipulando o DOM.
+            </p>
+            <a href="https://keillon.github.io/Weather-clima/" target="_blank"
+              ><button class="btn-project">Ver projeto</button></a
+            >
+            <div class="icon-project">
+              <p>Ferramentas:</p>
+              <ion-icon
+                class="icon-project"
+                name="logo-html5"
+                title="HTML"
+              ></ion-icon>
+              <ion-icon
+                class="icon-project"
+                name="logo-css3"
+                title="CSS"
+              ></ion-icon>
+              <ion-icon
+                class="icon-project"
+                name="logo-javascript"
+                title="JAVASCRIPT"
+              ></ion-icon>
+            </div>
           </div>
         </div>
 
         <div class="project-content">
-          <img class="img-project" src="assets/img/Portfolio-Keillon.webp" alt="Portifolio keillon site">
-          <div class="text-project ">
-            <p>Portfólio em JavaScript puxando os dados do GitHub, com o uso de API e DOM.</p>
-          <a href="https://keillon.github.io/portfolio-js/" target="_blank"><button class="btn-project">Ver projeto</button></a>
-          <div class="icon-project">
-            <p>Ferramentas:</p>
-            <ion-icon class="icon-project" name="logo-html5" title="HTML"></ion-icon>
-            <ion-icon class="icon-project" name="logo-css3" title="CSS"></ion-icon>
-            <ion-icon class="icon-project" name="logo-javascript" title="JAVASCRIPT"></ion-icon>
-          </div>
+          <img
+            class="img-project"
+            src="assets/img/Portfolio-Keillon.webp"
+            alt="Portifolio keillon site"
+          />
+          <div class="text-project">
+            <p>
+              Portfólio em JavaScript puxando os dados do GitHub, com o uso de
+              API e DOM.
+            </p>
+            <a href="https://keillon.github.io/portfolio-js/" target="_blank"
+              ><button class="btn-project">Ver projeto</button></a
+            >
+            <div class="icon-project">
+              <p>Ferramentas:</p>
+              <ion-icon
+                class="icon-project"
+                name="logo-html5"
+                title="HTML"
+              ></ion-icon>
+              <ion-icon
+                class="icon-project"
+                name="logo-css3"
+                title="CSS"
+              ></ion-icon>
+              <ion-icon
+                class="icon-project"
+                name="logo-javascript"
+                title="JAVASCRIPT"
+              ></ion-icon>
+            </div>
           </div>
         </div>
 
         <div class="project-content reverse">
-          <img class="img-project" src="assets/img/HBO-Max.webp" alt="HBO SITE">
-          <div class="text-project ">
-            <p>Site clone da HBO Max com HTML e CSS, projeto elaborado no curso ministrado pela DIO.me.</p>
-          <a href="https://hbo-site.netlify.app/" target="_blank"><button class="btn-project">Ver projeto</button></a>
-          <div class="icon-project">
-            <p>Ferramentas:</p>
-            <ion-icon class="icon-project" name="logo-html5" title="HTML"></ion-icon>
-            <ion-icon class="icon-project" name="logo-css3" title="CSS"></ion-icon>
-          </div>
+          <img
+            class="img-project"
+            src="assets/img/HBO-Max.webp"
+            alt="HBO SITE"
+          />
+          <div class="text-project">
+            <p>
+              Site clone da HBO Max com HTML e CSS, projeto elaborado no curso
+              ministrado pela DIO.me.
+            </p>
+            <a href="https://hbo-site.netlify.app/" target="_blank"
+              ><button class="btn-project">Ver projeto</button></a
+            >
+            <div class="icon-project">
+              <p>Ferramentas:</p>
+              <ion-icon
+                class="icon-project"
+                name="logo-html5"
+                title="HTML"
+              ></ion-icon>
+              <ion-icon
+                class="icon-project"
+                name="logo-css3"
+                title="CSS"
+              ></ion-icon>
+            </div>
           </div>
         </div>
 
         <div class="project-content">
-          <img class="img-project" src="assets/img/Pokedex.webp" alt="">
-          <div class="text-project ">
-            <p>Uso de API da: PokeApi. Manipulando DOM, JavaScript, Css e Html.</p>
-          <a href="https://pokedex-0002.netlify.app/" target="_blank"><button class="btn-project">Ver projeto</button></a>
-          <div class="icon-project">
-            <p>Ferramentas:</p>
-            <ion-icon class="icon-project" name="logo-html5" title="HTML"></ion-icon>
-            <ion-icon class="icon-project" name="logo-css3" title="CSS"></ion-icon>
-            <ion-icon class="icon-project" name="logo-javascript" title="JAVASCRIPT"></ion-icon>
-            
-          </div>
+          <img class="img-project" src="assets/img/Pokedex.webp" alt="" />
+          <div class="text-project">
+            <p>
+              Uso de API da: PokeApi. Manipulando DOM, JavaScript, Css e Html.
+            </p>
+            <a href="https://pokedex-0002.netlify.app/" target="_blank"
+              ><button class="btn-project">Ver projeto</button></a
+            >
+            <div class="icon-project">
+              <p>Ferramentas:</p>
+              <ion-icon
+                class="icon-project"
+                name="logo-html5"
+                title="HTML"
+              ></ion-icon>
+              <ion-icon
+                class="icon-project"
+                name="logo-css3"
+                title="CSS"
+              ></ion-icon>
+              <ion-icon
+                class="icon-project"
+                name="logo-javascript"
+                title="JAVASCRIPT"
+              ></ion-icon>
+            </div>
           </div>
         </div>
 
         <div class="project-content reverse">
-          <img class="img-project" src="assets/img/Password-Random.webp" alt="">
-          <div class="text-project ">
-            <p>Manipulando DOM: Gerando senhas aleatórias com uso de JavaScript.</p>
-          <a href="https://keillon.github.io/gerador-senhas/" target="_blank"><button class="btn-project">Ver projeto</button></a>
-          <div class="icon-project">
-            <p>Ferramentas:</p>
-            <ion-icon class="icon-project" name="logo-html5" title="HTML"></ion-icon>
-            <ion-icon class="icon-project" name="logo-css3" title="CSS"></ion-icon>
-            <ion-icon class="icon-project" name="logo-javascript" title="JAVASCRIPT"></ion-icon>
-            
-          </div>
+          <img
+            class="img-project"
+            src="assets/img/Password-Random.webp"
+            alt=""
+          />
+          <div class="text-project">
+            <p>
+              Manipulando DOM: Gerando senhas aleatórias com uso de JavaScript.
+            </p>
+            <a href="https://keillon.github.io/gerador-senhas/" target="_blank"
+              ><button class="btn-project">Ver projeto</button></a
+            >
+            <div class="icon-project">
+              <p>Ferramentas:</p>
+              <ion-icon
+                class="icon-project"
+                name="logo-html5"
+                title="HTML"
+              ></ion-icon>
+              <ion-icon
+                class="icon-project"
+                name="logo-css3"
+                title="CSS"
+              ></ion-icon>
+              <ion-icon
+                class="icon-project"
+                name="logo-javascript"
+                title="JAVASCRIPT"
+              ></ion-icon>
+            </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -344,6 +476,11 @@
           </div>
 
           <div class="btn-box">
+            <input
+              type="hidden"
+              name="_next"
+              value="https://keillon.github.io/portfolio/"
+            />
             <button
               type="submit"
               name="submit"

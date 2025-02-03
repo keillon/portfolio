@@ -2,9 +2,10 @@
     background-color: var(--bg-4);
     backdrop-filter: blur(10px);
     position: absolute;
-    top: 2.8rem;
+    top: 3rem;
     left: 0;
     width: 100%;
+    height: fit-content;
     display: none;
     z-index: 999;
 }
@@ -80,3 +81,4 @@
     }
    
 }
+
