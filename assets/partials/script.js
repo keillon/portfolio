@@ -95,7 +95,7 @@ window.addEventListener('load', loadScheme)
 const selectedLangEn = document.querySelector('#en')
 const selectedLangPt = document.querySelector('#pt')
 
-let about = document.getElementsByTagName('ola')
+let about = document.querySelectorAll('ola')
 let project = document.getElementsByClassName('project')
 let contact = document.getElementsByClassName('contact')
 let hero = document.querySelector('.h1__hero')
